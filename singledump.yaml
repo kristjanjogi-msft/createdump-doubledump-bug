@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: singledump
+spec:
+  shareProcessNamespace: true
+  containers:
+  - name: singledump
+    image: crashingapplication:1.0
+    env:
+    - name: COMPlus_DbgEnableMiniDump
+      value: "1"
+    - name: COMPlus_DbgMiniDumpType
+      value: "4"
+    - name: COMPlus_DbgMiniDumpName
+      value: "/tmp/crashdump.%d.%t"
