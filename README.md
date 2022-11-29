@@ -1,6 +1,6 @@
 # createdump-doubledump-bug
 
-A bug in the [createdump](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/xplat-minidump-generation.md) tool which causes double crash dumps to be created for a single crash when running in a Linux container in Kubernetes.
+A bug in the [createdump](https://learn.microsoft.com/en-us/troubleshoot/developer/webapps/aspnetcore/practice-troubleshoot-linux/lab-1-3-capture-core-crash-dumps) tool which causes double crash dumps to be created for a single crash when running in a Linux container in Kubernetes.
 
 ## Reproduction prerequites
 
